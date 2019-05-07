@@ -1,0 +1,50 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Procedural Modeling</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+      body {background-color: black;}
+    </style>
+
+  </head>
+
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html #top">HOME</a>
+      <a href="index.html #demowork">DEMO WORK</a>
+      <a href="#index.html resume">RESUME</a>
+      <a href="#index.html contact">CONTACT</a>
+    </div>
+
+    <div class = "procedural">
+    <<h1> Procedural Modeling</h1>
+    <image id = "myImg" src="./images/samuelearnest_gingerbreadFinal01.jpg" alt="pic1" height = "70%" width = "70%">
+    <button class="button" id = "pic" onclick="changePhoto()"> next </button>
+    <<h5> This project required me to use houdini's procedrual modeling techniques to create a complex gingerbread home. </h5>
+
+
+    <script>
+      function changePhoto() {
+        var imgsrc = document.getElementById("myImg").src;
+
+
+        if(imgsrc.includes("samuelearnest_gingerbreadFinal01.jpg"))
+        {
+          document.getElementById("myImg").src = "./images/samuelearnest_gingerbreadFinal02.jpg";
+        }
+        if(imgsrc.includes("samuelearnest_gingerbreadFinal02.jpg"))
+        {
+          document.getElementById("myImg").src = "./images/samuelearnest_gingerbreadFinal03.jpg";
+        }
+        if(imgsrc.includes("samuelearnest_gingerbreadFinal03.jpg"))
+        {
+          document.getElementById("myImg").src = "./images/samuelearnest_gingerbreadFinal01.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
